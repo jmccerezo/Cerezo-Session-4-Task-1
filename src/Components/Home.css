@@ -15,10 +15,12 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 1rem;
+    padding: 10px;
 }
 
 .animeCardContent {
-    padding: 20px;
+    padding: 10px;
 }
 
 .animeCardContent > img {
@@ -27,4 +29,8 @@ nav {
 
 .card {
     border-radius: 20px;
+}
+
+.card-content {
+    width: 640px;
 }

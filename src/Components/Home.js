@@ -65,7 +65,7 @@ class Home extends Component {
       <>
         <div id="homeContainer">
           <div>
-            <h1>MAL Top Animes</h1>
+            <h1>MyAnimeList Top Anime</h1>
           </div>
           <div>{animeQuotes}</div>
         </div>
