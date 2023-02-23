@@ -1,0 +1,33 @@
+#contactUsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+#aboutCardContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.aboutCardContent {
+    padding: 20px;
+}
+
+.card {
+    border-radius: 20px;
+}
+
+.contactDetails {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 10px;
+}

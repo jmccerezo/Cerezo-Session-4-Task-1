@@ -1,0 +1,30 @@
+#homeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+#animeCardContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.animeCardContent {
+    padding: 20px;
+}
+
+.animeCardContent > img {
+    border-radius: 10px;
+}
+
+.card {
+    border-radius: 20px;
+}
