@@ -1,13 +1,16 @@
-const path = require('path');
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: './src/index.js',
+  entry: "./src/index.js",
   output: {
-    path: path.join(__dirname, '/dist'),
-    filename: 'index.bundle.js',
+    path: path.join(__dirname, "/dist"),
+    filename: "index.bundle.js",
+    publicPath: '/',
   },
   devServer: {
     port: 3000,
+    historyApiFallback: true,
   },
   module: {
     rules: [
@@ -15,27 +18,27 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',
+          loader: "babel-loader",
         },
       },
       {
         test: /\.css$/i,
-        include: [path.resolve(__dirname, 'src')],
-        use: ['style-loader', 'css-loader'],
+        include: [path.resolve(__dirname, "src")],
+        use: ["style-loader", "css-loader"],
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
         use: [
           {
-            loader: 'file-loader',
+            loader: "file-loader",
             options: {
               query: {
-                name: 'src/assets/[name].[ext]',
+                name: "src/assets/[name].[ext]",
               },
             },
           },
           {
-            loader: 'image-webpack-loader',
+            loader: "image-webpack-loader",
             options: {
               query: {
                 mozjpeg: {
@@ -55,6 +58,11 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: ['', '.js', '.jsx', 'css'],
+    extensions: ["", ".js", ".jsx", "css"],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "src/index.html",
+    }),
+  ],
 };
