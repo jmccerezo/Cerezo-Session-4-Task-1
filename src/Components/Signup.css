@@ -1,0 +1,20 @@
+#signUpContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.formContainer {
+    margin-bottom: 50px;
+}
+
+.errorMsg {
+    color: red;
+    font-size: 14px;
+}
+
+#submitContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
