@@ -7,6 +7,7 @@ React Router implementation
 - Webpack for overall bundling
 - React.js library for web app development
 - Materialize CSS for UI
+- Axios for fetching data from API
 
 ## Run Locally
 
