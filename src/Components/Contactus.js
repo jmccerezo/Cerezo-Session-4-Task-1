@@ -38,7 +38,7 @@ class Contactus extends Component {
             <div className="col s12 m12">
               <div className="card blue-grey darken-1">
                 <div className="card-content white-text">
-                  <div id="aboutCardContainer">
+                  <div className="aboutCardContainer">
                     <div className="aboutCardContent">
                       <span className="card-title">{loc.name}</span>
                       <br />
@@ -70,6 +70,28 @@ class Contactus extends Component {
             <h1>Contact us</h1>
           </div>
           <div>{locations}</div>
+          <div>
+            <div className="row">
+              <div className="col s12 m12">
+                <div className="card blue-grey darken-1">
+                  <div className="card-content white-text">
+                    <div className="aboutCardContainer">
+                      <div className="aboutCardContent">
+                        <span className="card-title">
+                          GECO Philippines IloIlo
+                        </span>
+                        <br />
+                        <iframe
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.084366834469!2d122.55418771428668!3d10.727976163020873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33aee5d6d4dea36d%3A0xec8f6de04d196a3a!2sGECO%20Philippines%20-%20IloIlo!5e0!3m2!1sen!2sph!4v1677199725566!5m2!1sen!2sph"
+                          loading="lazy"
+                        ></iframe>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </>
     );

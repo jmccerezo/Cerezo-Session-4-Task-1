@@ -11,7 +11,7 @@ nav {
     z-index: 999;
 }
 
-#aboutCardContainer {
+.aboutCardContainer {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -19,6 +19,11 @@ nav {
 
 .aboutCardContent {
     padding: 20px;
+}
+
+.aboutCardContent > iframe {
+    border-radius: 10px;
+    width: 550px;
 }
 
 .card {
