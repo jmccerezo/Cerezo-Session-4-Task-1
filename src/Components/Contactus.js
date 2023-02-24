@@ -38,8 +38,8 @@ class Contactus extends Component {
             <div className="col s12 m12">
               <div className="card blue-grey darken-1">
                 <div className="card-content white-text">
-                  <div className="aboutCardContainer">
-                    <div className="aboutCardContent">
+                  <div className="contactCardContainer">
+                    <div className="contactCardContent">
                       <span className="card-title">{loc.name}</span>
                       <br />
                       <div className="contactDetails">
@@ -75,8 +75,8 @@ class Contactus extends Component {
               <div className="col s12 m12">
                 <div className="card blue-grey darken-1">
                   <div className="card-content white-text">
-                    <div className="aboutCardContainer">
-                      <div className="aboutCardContent">
+                    <div className="contactCardContainer">
+                      <div className="contactCardContent">
                         <span className="card-title">
                           GECO Philippines IloIlo
                         </span>

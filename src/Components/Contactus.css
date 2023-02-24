@@ -17,13 +17,14 @@ nav {
     align-items: center;
 }
 
-.aboutCardContent {
+.contactCardContent {
     padding: 20px;
 }
 
-.aboutCardContent > iframe {
+.contactCardContent > iframe {
     border-radius: 10px;
     width: 550px;
+    height: 350px;
 }
 
 .card {
