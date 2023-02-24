@@ -11,7 +11,7 @@ nav {
     z-index: 999;
 }
 
-#animeCardContainer {
+.animeCardContainer {
     display: flex;
     flex-direction: row;
     align-items: center;
